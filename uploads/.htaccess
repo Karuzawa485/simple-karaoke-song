@@ -1,0 +1,5 @@
+# Uploaded files are audio only. Disable script execution in this folder on Apache.
+Options -Indexes
+<FilesMatch "\.(php|phtml|phar|cgi|pl|py|sh)$">
+    Require all denied
+</FilesMatch>
